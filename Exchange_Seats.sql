@@ -1,3 +1,5 @@
+/*Quiz: https://leetcode.com/problems/exchange-seats/description/*/
+
 SELECT t1.id, t2.student 
 FROM seat as t1 JOIN seat as t2
 ON ceil(t1.id/2)*2 - mod(t1.id+1,2) = t2.id
